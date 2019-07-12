@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MainTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/background</item>
+    </style>
+
+    <style name="BrowseTheme" parent="Theme.AppCompat.Light">
+        <item name="actionBarStyle">@style/Widget.AppCompat.Light.ActionBar.Solid</item>
+        <item name="android:actionBarStyle">@style/Widget.AppCompat.Light.ActionBar.Solid</item>
+    </style>
+
+    <style name="DetailsTheme" parent="Theme.AppCompat.Light">
+        <item name="actionBarStyle">@style/Widget.AppCompat.Light.ActionBar.Solid</item>
+        <item name="android:actionBarStyle">@style/Widget.AppCompat.Light.ActionBar.Solid</item>
+    </style>
+
+    <style name="AccountTheme" parent="Theme.AppCompat.Light">
+        <item name="actionBarStyle">@style/Widget.AppCompat.Light.ActionBar.Solid</item>
+        <item name="android:actionBarStyle">@style/Widget.AppCompat.Light.ActionBar.Solid</item>
+    </style>
+
+</resources>
