@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dev.sendit">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="SendIT"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="AA_MODELS" android:value="com.dev.sendit.models.UserModel, com.dev.sendit.models.RatingModel, com.dev.sendit.models.ListModel" />
+
+        <activity
+            android:name=".Navigation"
+            android:label="@string/title_activity_main"></activity>
+        <activity
+            android:name=".BrowseActivity"
+            android:label="Browse listings"
+            android:screenOrientation="portrait"
+            android:theme="@style/BrowseTheme"></activity>
+        <activity
+            android:name=".ListDetails"
+            android:label=""
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".MessageActivity"
+            android:label=""
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".AccountActivity"
+            android:label=""
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".MessagesActivity"
+            android:label=""
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label=""
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".AddListingActivity"
+            android:label=""
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

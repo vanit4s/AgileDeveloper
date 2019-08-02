@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="60dp"
+    android:clipToPadding="false">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/receiverIcon"
+        android:layout_width="34dp"
+        android:layout_height="34dp" />
+
+    <TextView
+        android:id="@+id/receiverName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/receiverIcon"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/receiverIcon"
+        android:paddingBottom="4dp" />
+
+    <TextView
+        android:id="@+id/message_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/receiverName"
+        android:layout_alignLeft="@+id/receiverName"
+        android:background="@drawable/their_message"
+        android:elevation="2dp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:text="Sent you a listing request!"
+        android:textSize="18dp">
+    </TextView>
+
+    <Button
+        android:id="@+id/btnAccept"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="80dp"
+        android:background="#C4E0CF"
+        android:text="Accept" />
+
+    <Button
+        android:id="@+id/btnDecline"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="187dp"
+        android:layout_marginTop="80dp"
+        android:background="#E0C4C4"
+        android:text="Decline" />
+
+</RelativeLayout>
