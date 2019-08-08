@@ -192,6 +192,13 @@ public class MainActivity extends AppCompatActivity {
                         database = FirebaseDatabase.getInstance().getReference("Users").child(id).child("Email");
                         database.setValue(email);
 
+                        SharedPreferences.Editor editor = shared.edit();
+                        editor.putString("NAME", name);
+                        editor.putString("FIRST_NAME", first_name);
+                        editor.putString("EMAIL", email);
+                        editor.putString("URL", image_url);
+                        editor.commit();
+
                         Toast.makeText(MainActivity.this, "DATABASE: " + email + "!", Toast.LENGTH_SHORT).show();
 
                         RequestOptions requestOptions = new RequestOptions();
