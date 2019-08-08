@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="208dp"
+        android:background="@drawable/google_button"
+        android:text="Submit"
+        app:layout_constraintBottom_toTopOf="@+id/botGuide"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuide"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/leftGuide"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imgLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuide"
+        app:layout_constraintStart_toEndOf="@+id/txtNewLocation"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/ic_location_searching_white_24dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:alpha=".65"
+        app:layout_constraintBottom_toTopOf="@+id/botGuide"
+        app:layout_constraintTop_toBottomOf="@+id/profileEmail"
+        app:layout_constraintVertical_bias="0.01"
+        app:srcCompat="@android:color/background_light"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/messagesToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/ic_keyboard_arrow_left_black_24dp"
+            app:layout_constraintEnd_toStartOf="@+id/imgLogout"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/messageUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuide"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/leftGuide"
+        app:layout_constraintTop_toTopOf="@+id/topGuide" />
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuide"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/leftGuide"
+        app:layout_constraintTop_toBottomOf="@+id/profileImage" />
+
+    <TextView
+        android:id="@+id/profileEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Email"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuide"
+        app:layout_constraintStart_toStartOf="@+id/leftGuide"
+        app:layout_constraintTop_toBottomOf="@+id/profileName" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/topGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/leftGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/rightGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/botGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <TextView
+        android:id="@+id/settingsLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="8dp"
+        android:text="Location"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuide"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="@+id/leftGuide"
+        app:layout_constraintTop_toBottomOf="@+id/profileEmail" />
+
+    <EditText
+        android:id="@+id/txtNewLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuide"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="@+id/leftGuide"
+        app:layout_constraintTop_toBottomOf="@+id/profileEmail" />
+
+</android.support.constraint.ConstraintLayout>
